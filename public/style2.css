@@ -1,0 +1,207 @@
+/* Opšti stilovi za telo stranice */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #74b9ff, #0984e3);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  background-attachment: fixed; /* Fiksna pozadina */
+  background-repeat: no-repeat; /* Sprečavanje linija na pozadini */
+}
+
+/* Kontejner za sve elemente */
+.container {
+  max-width: 1200px; /* Zadržana širina */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Sekcije RFID i tabela */
+.rfid-section, .table-section {
+  margin-bottom: 30px;
+}
+
+/* Naslovi sekcija */
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Stilovi za unos i dugmad */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input {
+  margin: 10px 0;
+  padding: 12px;
+  width: calc(100% - 40px); /* Širina input polja da ostane u okviru */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #74b9ff;
+  box-shadow: 0 0 10px rgba(116, 185, 255, 0.5);
+  outline: none;
+}
+
+button {
+  padding: 12px 34px;
+  background-color: #00cec9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0984e3;
+  transform: scale(1.05);
+}
+
+/* Poruka validacije */
+#message {
+  margin-top: 15px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #dfe6e9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #b2bec3;
+}
+
+#validationIcon {
+  font-size: 24px;
+}
+
+/* Stanje za validaciju */
+#message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+#message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+#validationIcon.success {
+  color: #28a745;
+}
+
+#validationIcon.error {
+  color: #dc3545;
+}
+
+/* Kontejner za tabelu */
+.table-section {
+  overflow-x: auto; /* Omogućava horizontalno skrolovanje */
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+/* Tabela */
+table {
+  width: 100%; /* Puna širina */
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  table-layout: auto; /* Automatska širina kolona */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  word-wrap: break-word; /* Prelom teksta unutar ćelija */
+}
+
+th {
+  background-color: #0984e3;
+  color: white;
+  text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #dfe6e9;
+  transition: background-color 0.3s;
+}
+
+/* MEDIA QUERIES ZA MOBILNE UREĐAJE */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+  }
+
+  input {
+    width: calc(100% - 20px); /* Smanji širinu input polja za male ekrane */
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%; /* Dugmad zauzimaju punu širinu na mobilnim uređajima */
+  }
+
+  table {
+    font-size: 14px; /* Manji font za tabelu */
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  table {
+    font-size: 12px; /* Još manji font */
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+  .table-section {
+    -webkit-overflow-scrolling: touch; /* Glatko skrolovanje za mobilne uređaje */
+  }
+}

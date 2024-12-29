@@ -1,0 +1,53 @@
+{
+    "employees": {
+      "53F66D14": {
+        "id": "1",
+        "firstName": "Kenan",
+        "lastName": "Kulović",
+        "position": "Software Developer",
+        "department": "IT",
+        "rfidCard": "53F66D14"
+      },
+      "A3A8F927": {
+        "id": "1",
+        "firstName": "Šaban",
+        "lastName": "Gačić",
+        "position": "Project Manager",
+        "department": "Management",
+        "rfidCard": "A3A8F927"
+      },
+      "580ABC4F7E10": {
+        "id": "3",
+        "firstName": "Ivo",
+        "lastName": "Ivić",
+        "position": "Designer",
+        "department": "Design",
+        "rfidCard": "580ABC4F7E10"
+      }
+    },
+    "logs": {
+      "53F66D14": [
+        {
+          "checkIn": "2024-12-27T08:00:00Z",
+          "checkOut": "2024-12-27T16:00:00Z"
+        },
+        {
+          "checkIn": "2024-12-28T08:30:00Z",
+          "checkOut": "2024-12-28T15:45:00Z"
+        }
+      ],
+      "A3A8F927": [
+        {
+          "checkIn": "2024-12-27T09:00:00Z",
+          "checkOut": "2024-12-27T17:00:00Z"
+        }
+      ],
+      "580ABC4F7E10": [
+        {
+          "checkIn": "2024-12-27T08:15:00Z",
+          "checkOut": "2024-12-27T16:30:00Z"
+        }
+      ]
+    }
+  }
+  

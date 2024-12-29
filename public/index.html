@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RFID Validacija</title>
+  <link rel="stylesheet" href="style2.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- RFID validacija -->
+    <div class="rfid-section">
+      <h1>RFID Validacija</h1>
+      <label for="cardId">RFID ID Kartice:</label>
+      <input type="text" id="cardId" placeholder="Skeniraj karticu" readonly>
+      <button id="validateBtn">Validiraj</button>
+      <p id="message">
+        <span id="validationIcon"></span> 
+        <span id="validationMessage">---</span>
+      </p>
+    </div>
+
+    <!-- Tabela sa zaposlenima -->
+    <div class="table-section">
+      <h2>Tabela o svim zaposlenima</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Pozicija</th>
+            <th>Odeljenje</th>
+            <th>Zadnji put logovan</th>
+            <th>Zadnji put odlogovan</th>
+            <th>Ukupan broj sati (prošli dan)</th>
+          </tr>
+        </thead>
+        <tbody id="employeeTable">
+          <!-- Redovi sa podacima će biti dodani ovde dinamički -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
