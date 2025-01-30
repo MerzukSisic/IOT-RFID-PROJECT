@@ -1,14 +1,6 @@
 // Firebase konfiguracija
 // Firebase konfiguracija
-const firebaseConfig = {
-    apiKey: "AIzaSyAbNx5w8lXcgb9kIiq7NuhGjs7ANKWAT_8",
-    authDomain: "iot-project-f5585.firebaseapp.com",
-    databaseURL: "https://iot-project-f5585-default-rtdb.firebaseio.com",
-    projectId: "iot-project-f5585",
-    storageBucket: "iot-project-f5585.firebasestorage.app",
-    messagingSenderId: "168988614609",
-    appId: "1:168988614609:web:9e4b1dbc3cfa59cf2c8af0"
-  };
+
   // Inicijalizacija Firebase-a
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
